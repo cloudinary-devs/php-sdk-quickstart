@@ -14,7 +14,8 @@
 <?php
 echo '<h1>Cloudinary PHP Quick Start</h1>';
 
-
+require_once __DIR__ . '/vendor/autoload.php';
+    
 use Cloudinary\Api\Admin\AdminApi;
 use Cloudinary\Api\Upload\UploadApi;
 use Cloudinary\Tag\ImageTag;
