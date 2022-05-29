@@ -23,12 +23,12 @@ use Cloudinary\Transformation\Resize;
 // replace `cloudinary://my_key:my_secret@my_cloud_name` with your environment variable
 $cloudinary = new Cloudinary('cloudinary://my_key:my_secret@my_cloud_name?secure=true')
     
+    
 // Upload API
 echo '<h2>Upload API Response</h2>';
 
 // Upload the image 
 $upload = new UploadApi();
-echo '<h2>Upload API Response</h2>';
 echo '<pre>';
 echo json_encode(
   $upload->upload('https://res.cloudinary.com/demo/image/upload/flower.jpg', [
@@ -39,23 +39,21 @@ echo json_encode(
 );
 echo '</pre>';
 
+    
 // Admin api
 echo '<h2>Admin API Response</h2>';
 
 // Get the asset details
-
-echo '<h2>Admin API Response</h2>';
-$api = new AdminApi();
-
+$admin = new AdminApi();
 echo '<pre>';
-echo json_encode($api->asset('flower_sample', [
+echo json_encode($admin->asset('flower_sample', [
   'colors' => TRUE]), JSON_PRETTY_PRINT
 );
 echo '</pre>';
 
-
+    
+// Delivery with transformations
 echo '<h2>Cloudinary Image</h2>';
-
 
 // Create the image tag with the transformed image
 $imgtag = $cloudinary->imageTag('flower_sample')
