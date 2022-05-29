@@ -56,13 +56,14 @@ echo '<h2>Cloudinary Image</h2>';
 
 
 // Create the image tag with the transformed image
-(new ImageTag('flower_sample'))
+$imgtag = (new ImageTag('flower_sample'))
   ->resize(Resize::pad()
     ->width(400)
     ->height(400)
     ->background(Background::predominant())
   );
 
+echo $imgtag;
 // The code above generates the following HTML image tag (for the demo account):
 //  <img src="https://res.cloudinary.com/demo/image/upload/b_auto:predominant,c_pad,h_400,w_400/flower_sample">
 
