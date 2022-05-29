@@ -20,7 +20,8 @@ use Cloudinary\Api\Upload\UploadApi;
 use Cloudinary\Tag\ImageTag;
 use Cloudinary\Transformation\Resize;
 
-$cloudinary = new Cloudinary('loudinary://my_key:my_secret@my_cloud_name?secure=true')
+// replace `cloudinary://my_key:my_secret@my_cloud_name` with your environment variable
+$cloudinary = new Cloudinary('cloudinary://my_key:my_secret@my_cloud_name?secure=true')
     
 // Upload API
 echo '<h2>Upload API Response</h2>';
