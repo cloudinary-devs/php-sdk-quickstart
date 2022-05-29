@@ -1,0 +1,16 @@
+{
+  "name": "cloudinary/cloudinary_php_quickstart",
+  "description": "Cloudinary PHP SDK Quick Start",
+  "type": "project",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cloudinary",
+      "homepage": "https://github.com/cloudinary/cloudinary_php"
+    }
+  ],
+  "require": {
+    "cloudinary/cloudinary_php": "^2"
+  }
+}
