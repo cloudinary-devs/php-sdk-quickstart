@@ -20,7 +20,8 @@ use Cloudinary\Api\Upload\UploadApi;
 use Cloudinary\Tag\ImageTag;
 use Cloudinary\Transformation\Resize;
 
-
+$cloudinary = new Cloudinary('loudinary://my_key:my_secret@my_cloud_name?secure=true')
+    
 // Upload API
 echo '<h2>Upload API Response</h2>';
 
@@ -56,7 +57,7 @@ echo '<h2>Cloudinary Image</h2>';
 
 
 // Create the image tag with the transformed image
-$imgtag = (new ImageTag('flower_sample'))
+$imgtag = $cloudinary->imageTag('flower_sample')
   ->resize(Resize::pad()
     ->width(400)
     ->height(400)
