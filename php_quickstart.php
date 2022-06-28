@@ -9,10 +9,10 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-
-use Cloudinary\Api\Admin\AdminApi;
-use Cloudinary\Api\Upload\UploadApi;
+    
 use Cloudinary\Configuration\Configuration;
+use Cloudinary\Api\Upload\UploadApi;
+use Cloudinary\Api\Admin\AdminApi;
 use Cloudinary\Tag\ImageTag;
 use Cloudinary\Transformation\Background;
 use Cloudinary\Transformation\Resize;
